@@ -16,12 +16,12 @@ int main()
         {  
             if(arr[i] == arr[j])
             {  
-                count++;  
-                freq[j] = visited;  
+                count++;  //2 2
+                freq[j] = visited;  //freq[7]=-1 freq[5]=-1 f[8]=-1
             }  
         }  
-        if(freq[i] != visited)  
-            freq[i] = count;  
+        if(freq[i] != visited)  //freq[0]!=-1 f[1] != -1 
+            freq[i] = count;  //freq[0]=2 f[1]=2 f[2]=1 f[3]=2 f[4]=1
     }  
       
     //Displays the frequency of each element present in array  
